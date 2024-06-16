@@ -5,7 +5,7 @@ const App = () => {
   const [isFullScreen, setIsFullScreen] = useState(false);
   const [questions, setQuestions] = useState([]);
   const [activeQuestionIndex, setActiveQuestionIndex] = useState(0);
-  const [totalTimeLeft, setTotalTimeLeft] = useState(60); // 10 minutes in seconds
+  const [totalTimeLeft, setTotalTimeLeft] = useState(600); // 10 minutes in seconds
   const [responses, setResponses] = useState({});
   const [quizEnded, setQuizEnded] = useState(false);
   const [warning, setWarning] = useState('');
