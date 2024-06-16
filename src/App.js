@@ -117,7 +117,7 @@ const App = () => {
               <p className="text-2xl text-gray-800">You scored {correctAnswers} out of {totalQuestions}</p>
               <p className="text-lg text-gray-800 mt-4">Percentage: {((correctAnswers / totalQuestions) * 100).toFixed(2)}%</p>
               <p className="text-lg text-gray-800 mt-4">You Can exit the Test</p>
-              <button className="w-fit mx-auto rounded-md text-md px-2 py-1 bg-green-600 text-white hover:bg-green-400 mt-8" onClick={() => window.location.reload()}>
+              <button className="w-fit mx-auto rounded-md text-md px-2 py-1 bg-green-600 text-white hover:bg-green-400 mt-8" onClick={() => {localStorage.clear(),window.location.reload()}}>
                 Exit the window
               </button>
             </div>
